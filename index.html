@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Tip Calculator at 15%</h1>
+        <form id="form">
+            <h2>How much was your bill?</h2>
+            $<input type="number" placeholder="enter bill amount" id="billAmount"/>
+
+            <h2>How many people are splitting the bill?</h2>
+            <input type="number" placeholder="enter number of people" id="numPeople"/>
+
+            <h2>How was your service?</h2>
+            <select id="service">
+                <option value = "Excellent">Excellent</option>
+                <option value = "Good">Good</option>
+                <option value = "Average">Average</option>
+                <option value = "Bad">Bad</option>
+            </select>
+            <br/>
+            <button type="button" id="button" onclick="calculateTip()">Calculate</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateTip() {
+            let billAmount = parseInt(document.getElementById('billAmount').value);
+            let numPeople = document.getElementById('numPeople').value;
+            let service = document.getElementById('service').value;
+
+            let fifteenPercent = (billAmount * 0.15);
+            let totalWithTip = (billAmount + fifteenPercent);
+            let costPerPerson = (totalWithTip / numPeople).toFixed(2);
+
+            alert("The cost per person including tip is: $" + costPerPerson + " and your service was " + service + "!");
+        }
+    </script>
+    
+</body>
+</html>

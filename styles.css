@@ -1,0 +1,51 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/seamless-pattern-money-green-flat-cartoon-style_221062-105.jpg");
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+    padding-top: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+input {
+    width: 180px;
+    height: 30px;
+}
+
+#container {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #f8f8ff;
+    height: 50vh;
+    margin: 20vh 40vw;
+    border: solid black 5px;
+    border-radius: 20px;
+}
+
+#button {
+    margin-top: 40px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: red;
+    color: white;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+
+#button:hover {
+    /* color: black; */
+    font-style: italic;
+}
+
+#service {
+    height: 35px;
+    width: 150px;
+}
