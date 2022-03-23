@@ -3,35 +3,36 @@ body {
 }
 
 h1 {
-    padding-top: 10px;
-    font-size: 50px;
+    padding-top: .1em;
+    font-size: 2em;
     font-family: 'Bebas Neue', cursive;
 }
 
 h2 {
-    padding-top: 15px;
+    padding-top: .1em;
     font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.1em;
 }
 
 input {
-    width: 180px;
-    height: 30px;
+    width: 15em;
+    height: 1em;
 }
 
 #container {
     text-align: center;
     margin-top: 10%;
     background-color: #f8f8ff;
-    height: 50vh;
+    height: 30em;
     margin: 20vh 40vw;
     border: solid black 5px;
     border-radius: 20px;
 }
 
 #button {
-    margin-top: 40px;
-    height: 50px;
-    width: 200px;
+    margin-top: 1em;
+    height: 1.5em;
+    width: 8em;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
     background-color: red;
@@ -41,11 +42,11 @@ input {
 }
 
 #button:hover {
-    /* color: black; */
+    color: black;
     font-style: italic;
 }
 
 #service {
-    height: 35px;
-    width: 150px;
+    height: 1.5em;
+    width: 10em;
 }
