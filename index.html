@@ -40,11 +40,29 @@
             let billAmount = parseInt(document.getElementById('billAmount').value);
             let numPeople = document.getElementById('numPeople').value;
             let service = document.getElementById('service').value;
-
-            let fifteenPercent = (billAmount * 0.15);
-            let totalWithTip = (billAmount + fifteenPercent);
+            let tipAmount = 0.15 //Tip amount default 15%
+            switch (service){
+                case "Excellent":
+                    tipAmount = .20;
+                    break;
+                case "Good":  
+                    tipAmount = .18;
+                    break;
+                case "Average":
+                    tipAmount = 0.15;
+                    break;
+                case "Bad":
+                    tipAmount = 0.10;
+                    break;
+                default:
+                    return "Nothing is selected";
+            }
+            let tipPercent = (billAmount * tipAmount); //changed to a variable
+            let totalWithTip = (billAmount + tipPercent);
             let costPerPerson = (totalWithTip / numPeople).toFixed(2);
 
+            
+            
             alert("The cost-per-person including tip is $" + costPerPerson + " and your service was " + service + "!");
         }
     </script>
