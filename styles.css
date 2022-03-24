@@ -19,17 +19,22 @@ input {
     height: 1em;
 }
 
-#container {
+#container-ryan {
     text-align: center;
-    margin-top: 10%;
     background-color: #f8f8ff;
     height: 30em;
-    margin: 20vh 40vw;
+    margin:auto;
+    max-width: fit-content;
     border: solid black 5px;
     border-radius: 20px;
     box-shadow: 6px 0px 75px 47px rgba(0,0,0,0.65);
     -webkit-box-shadow: 6px 0px 75px 47px rgba(0,0,0,0.65);
     -moz-box-shadow: 6px 0px 75px 47px rgba(0,0,0,0.65);
+    padding:20px;
+}
+
+#spacing {
+    height:100px;
 }
 
 #button {

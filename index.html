@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Tip Calculator</title>
+        <title>Tip Calculator</title>
 </head>
 <body>
-    <div id="container">
+    <div id="spacing"></div>
+    <div id="container-ryan">
         <h1>Tip Calculator</h1>
         <form id="form">
             <h2>How much was your bill?</h2>
@@ -25,10 +26,10 @@
 
             <h2>How was your service?</h2>
             <select id="service">
-                <option value = "Excellent">Excellent</option>
-                <option value = "Good">Good</option>
-                <option value = "Average">Average</option>
-                <option value = "Bad">Bad</option>
+                <option value = "Excellent">Excellent (20%)</option>
+                <option value = "Good">Good (18%)</option>
+                <option value = "Average">Average (15%)</option>
+                <option value = "Bad">Bad (10%)</option>
             </select>
             <br/>
             <button type="button" id="button" onclick="calculateTip()">Calculate</button>
@@ -66,6 +67,5 @@
             alert("The cost-per-person including tip is $" + costPerPerson + " and your service was " + service + "!");
         }
     </script>
-    
 </body>
 </html>
