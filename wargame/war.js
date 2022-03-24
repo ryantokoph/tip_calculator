@@ -6,3 +6,17 @@ function getCard () {
     return cardNumbers[randomNumCard.toFixed(0)]+" of "+ cardSuit[randomSuit.toFixed(0)]
 }
 console.log(getCard());
+
+//Deck, so you shouldn't be able to repeat numbers to 
+//make loop to go through both arrays and put into a deck array
+let deckOfCards = [];
+
+for (let i = 0;i < cardSuit.length;i++){
+    for(let j = 0;j<cardNumbers.length;j++){
+        deckOfCards.push(cardNumbers[j]+" of "+ cardSuit[i])
+    }
+}
+console.log(deckOfCards);
+console.log(deckOfCards.length)
+//deckOfCards.sort();
+//console.log(deckOfCards)
